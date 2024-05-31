@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>DailyBread | Chrome New Tab Extension</title>
+    <meta name="title" content="DailyBread | Chrome New Tab Extension">
+    <meta name="description" content="Start your day with essential apps on your browser tab.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
+    <meta property="og:title" content="DailyBread | Chrome New Tab Extension">
+    <meta property="og:description" content="Start your day with essential apps on your browser tab.">
+    <meta property="og:image" content="https://res.cloudinary.com/webmaye/image/upload/v1717156300/Ex101.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.yourwebsite.com/">
+    <meta property="twitter:title" content="DailyBread | Chrome New Tab Extension">
+    <meta property="twitter:description" content="Start your day with essential apps on your browser tab.">
+    <meta property="twitter:image" content="https://res.cloudinary.com/webmaye/image/upload/v1717156300/Ex101.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/bread-icon.svg" type="image/svg+xml">
+    <!-- Fallback favicons -->
+    <link rel="icon" href="assets/bread-icon-32x32.png" sizes="32x32">
+    <link rel="icon" href="assets/bread-icon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/bread-icon.svg">
+
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901,1,2&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Time and date here -->
+        <div class="time-container">
+            <span id="time">00:00</span>
+            <span id="date">Day Month Year</span>
+        </div>
+        <!-- Search bar here -->
+        <div class="search-container">
+            <img src="assets/search.svg" alt="Search" class="search-icon">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <div class="search-provider">
+                <span id="searchProvider">Google</span>
+                <img src="assets/arrow.svg" alt="Arrow" class="arrow-icon">
+            </div>
+        </div>
+        <!-- App icons here -->
+        <div class="apps-section">
+            <h2 class="apps-title">Apps</h2>
+            <div class="app-container">
+                <a href="https://www.deeja.co/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/deeja.svg" alt="Deeja" class="app-icon">
+                </a>
+                <a href="https://www.figma.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/figma.svg" alt="Figma" class="app-icon">
+                </a>
+                <a href="https://www.notion.so/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/notion.svg" alt="Notion" class="app-icon">
+                </a>
+                <a href="https://www.perplexity.ai/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/perplexity.svg" alt="Perplexity" class="app-icon">
+                </a>
+                <a href="https://claude.ai/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/anthropic.svg" alt="Claude" class="app-icon">
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/youtube.svg" alt="YouTube" class="app-icon">
+                </a>
+                <a href="https://replit.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/replit.svg" alt="Replit" class="app-icon">
+                </a>
+                <a href="https://github.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/github.svg" alt="GitHub" class="app-icon">
+                </a>
+                <a href="https://chat.openai.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/openai.svg" alt="ChatGPT" class="app-icon">
+                </a>
+                <a href="https://medium.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/medium.svg" alt="Medium" class="app-icon">
+                </a>
+                <a href="https://stripe.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/stripe.svg" alt="Stripe" class="app-icon">
+                </a>
+                <a href="https://gumroad.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/gumroad.svg" alt="Gumroad" class="app-icon">
+                </a>
+                <a href="https://www.lemonsqueezy.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/lemonsqueezy.svg" alt="LemonSqueezy" class="app-icon">
+                </a>
+                <a href="https://www.namecheap.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/namecheap.svg" alt="Namecheap" class="app-icon">
+                </a>
+                <a href="https://supabase.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/supabase.svg" alt="Supabase" class="app-icon">
+                </a>
+                <a href="https://mail.google.com/mail/u/0/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/gmail.svg" alt="Gmail" class="app-icon">
+                </a>
+                <a href="https://calendar.google.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/g-calender.svg" alt="Google Calender" class="app-icon">
+                </a>
+                <a href="https://maps.google.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/g-maps.svg" alt="Google Maps" class="app-icon">
+                </a>
+                <a href="https://www.canva.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/canva.svg" alt="Canva" class="app-icon">
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/whatsapp.svg" alt="WhatsApp" class="app-icon">
+                </a>
+                <a href="https://www.framer.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/framer.svg" alt="Framer" class="app-icon">
+                </a>
+                <a href="https://webflow.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/webflow.svg" alt="Webflow" class="app-icon">
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/linkedin.svg" alt="LinkedIn" class="app-icon">
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/x.svg" alt="X Formerly Twitter" class="app-icon">
+                </a>
+                <a href="https://vercel.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/vercel.svg" alt="Vercel" class="app-icon">
+                </a>
+                <a href="https://codesandbox.io/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/codesandbox.svg" alt="CodeSandbox" class="app-icon">
+                </a>
+                <a href="https://www.digitalocean.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/digitalocean.svg" alt="DigitalOcean" class="app-icon">
+                </a>
+                <a href="https://www.cloudflare.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/cloudflare.svg" alt="Cloudflare" class="app-icon">
+                </a>
+                <a href="https://unsplash.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/unsplash.svg" alt="Unsplash" class="app-icon">
+                </a>
+                <a href="https://protonvpn.com/" target="_blank" class="app-icon-container">
+                    <img src="assets/app/proton-vpn.svg" alt="Proton VPN" class="app-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

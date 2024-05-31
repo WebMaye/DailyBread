@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Satoshi', sans-serif;
+    background-color: #0F172A;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .time-container {
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+  #time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #date {
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    /* background-color: #333; */
+    box-sizing: border-box;
+    border: 1px solid #4C5C80;
+    padding: 0.5rem;
+    border-radius: 0;
+    /* margin-bottom: 2rem; */
+    width: 935px;
+  }
+  
+  
+  #searchInput {
+    background-color: transparent;
+    border: none;
+    color: #9FB1C7;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 764px;
+  }
+  
+  .search-provider {
+    display: flex;
+    align-items: right;
+    /* background-color: #444; */
+    color: #9FB1C7;
+    padding: 0.5rem;
+    /* border-radius: 0.25rem; */
+    cursor: pointer;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .arrow {
+    margin-left: 0.25rem;
+  }
+
+.apps-section {
+  margin-top: 2rem;
+}
+
+.apps-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 columns */
+  grid-gap: 37.3px;
+}
+
+.app-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1B2A4C;
+  width: 60px;
+  height: 60px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.app-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.app-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
