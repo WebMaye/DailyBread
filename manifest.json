@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "DailyBread",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Start your day with essential apps on your browser tab.",
     "chrome_url_overrides": {
         "newtab": "index.html"
